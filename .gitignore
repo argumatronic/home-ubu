@@ -1,7 +1,7 @@
 /*
+
 !/.atom/
 /.atom/*
-!/.atom/.gitignore
 !/.atom/config.cson
 !/.atom/keymap.cson
 !/.atom/styles.less
@@ -19,13 +19,11 @@
 !/.config/dconf/
 /.config/dconf/*
 !/.config/dconf/setup-*.sh
-!/.config/fish/*
-!/.config/git/
-/.config/git/gitk
+
 !/.config/sublime/
 !/.config/sublime-text-3/
-!/.config/sublime-text-3/Packages/User
 /.config/sublime-text-3/*
+!/.config/sublime-text-3/Packages/User
 !/.config/systemd/
 !/.config/user-dirs.conf
 !/.config/user-dirs.dirs
@@ -37,6 +35,7 @@
 !/.ghc/
 /.ghc/*
 !/.ghc/ghci.conf
+!/.gitconfig
 !/.gitignore
 !/.latexmkrc
 !/.local/
