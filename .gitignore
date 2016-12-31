@@ -24,6 +24,7 @@
 /.config/git/gitk
 !/.config/sublime/
 !/.config/sublime-text-3/
+!/.config/sublime-text-3/Packages/User
 /.config/sublime-text-3/*
 !/.config/systemd/
 !/.config/user-dirs.conf

@@ -1,4 +1,4 @@
-alias such=git
-alias very=git
-alias wow='git status' 
-alias gitrekt='git pull'
+alias gitrekt='git push origin master'
+alias gitfucking='git commit -am'
+alias gitbent='git pull'
+

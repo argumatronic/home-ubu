@@ -1,13 +1,8 @@
 "*":
-  core:
-    themes: [
-      "one-dark-ui"
-      "cake-syntax"
-    ]
+  core: {}
   editor:
-    fontFamily: "Monoid"
-    softWrap: true
+    invisibles: {}
   "exception-reporting":
-    userId: "876356f5-9953-2973-dc27-a708580b0640"
+    userId: "442e1f62-5ade-c806-af93-da31575ba721"
   welcome:
     showOnStartup: false

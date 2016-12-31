@@ -10,10 +10,10 @@ function uncommited_changes() {
     git --git-dir="$1" --work-tree="$worktree" diff-index --cached --quiet HEAD --ignore-submodules --
 }
 
-function untracked_files() {
-    worktree=${1%/*};
-    git --git-dir="$1" --work-tree="$worktree" status --porcelain 2>/dev/null | grep "^??" | wc -l
-}
+# function untracked_files() {
+#     worktree=${1%/*};
+#     git --git-dir="$1" --work-tree="$worktree" status --porcelain 2>/dev/null | grep "^??" | wc -l
+# }
 
 # function unpushed_commits() {
 #     worktree=${1%/*};
@@ -37,10 +37,10 @@ function find-dirty () {
             echo "uncommitted  $gitdir"
         fi
 
-        if ! untracked_files $gitdir
-        then
-            echo "untracked  $gitdir"
-        fi
+        # if ! untracked_files $gitdir
+        # then
+        #     echo "untracked  $gitdir"
+        # fi
 
         # if ! unpushed_commits $gitdir
         # then
