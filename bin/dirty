@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+function unstaged_changes() {
+    worktree=${1%/*};
+    git --git-dir="$1" --work-tree="$worktree" diff-files --quiet --ignore-submodules --
+}
+
+function uncommited_changes() {
+    worktree=${1%/*};
+    git --git-dir="$1" --work-tree="$worktree" diff-index --cached --quiet HEAD --ignore-submodules --
+}
+
+# function untracked_files() {
+#     worktree=${1%/*};
+#     git --git-dir="$1" --work-tree="$worktree" status --porcelain 2>/dev/null | grep "^??" | wc -l
+# }
+
+# function unpushed_commits() {
+#     worktree=${1%/*};
+#     # git --git-dir="$1" --work-tree="$worktree" cherry -v
+#     git --git-dir="$1" --work-tree="$worktree" log origin/master..master -q | grep commit | wc -l
+#     # git --git-dir="$1" --work-tree="$worktree" status 2>&1 | grep "ahead" | wc -l
+# }
+
+function find-dirty () {
+    for gitdir in `find . -name .git`;
+    do
+        worktree=${gitdir%/*};
+        echo $worktree;
+        if ! unstaged_changes $gitdir
+        then
+            echo "unstaged     $gitdir"
+        fi
+
+        if ! uncommited_changes $gitdir
+        then
+            echo "uncommitted  $gitdir"
+        fi
+
+        # if ! untracked_files $gitdir
+        # then
+        #     echo "untracked  $gitdir"
+        # fi
+
+        # if ! unpushed_commits $gitdir
+        # then
+        #     echo "unpushed  $gitdir"
+        # fi
+    done
+}
+
+find-dirty

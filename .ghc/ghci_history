@@ -1,0 +1,100 @@
+:q
+main
+:q
+minBound :: Char
+maxBound :: Char
+maxBound Char
+:q
+f
+f = putStr "10" >> f
+putStr "10" >> f
+:q
+(\(+) (*) -> 1 + 2 * 3) (+) (*)
+mappend (1 :: Integer) (1 :: Integer)
+mappend 1 1
+mappend [1, 2, 3] [4, 5, 6]
+:q
+:q
+:t B.not
+:t B.bool
+import qualified Data.Bool as B
+:m
+:t Data.Bool.not
+:t Data.Bool.bool
+import qualified Data.Bool
+:q
+:q
+:q
+:q
+:q
+:q
+:q
+:q
+:q
+:q
+:info Map
+import Data.Map
+:q
+:type bool
+:module
+:type bool
+import Data.Bool
+:type bool
+:module
+import Data.Char
+import Data.Bool
+:l data.hs
+:q
+:info Monad
+:q
+length (enumFrom (1 :: Int8))
+length (enumFrom 1 :: Int8)
+import Data.Int
+length (enumFrom 1 :: Int8)
+length (enumFrom False)
+:q
+:t sequence
+:q
+main
+:q
+:r
+2^8
+2^5
+Type 4 == Type 5
+:l sample.hs
+:q
+print (foldr (+) 0 [1..100])
+foldr (+) 0 [1..100]
+foldr (+) 0 [1..10000000000]
+:q
+:t (<*)
+:t (*>)
+:t (<*>)
+:q
+main
+:q
+addOne' 10.5
+:type addOne'
+let addOne' x = x +1
+addOne 10.5
+:type addOne
+addOne 5
+let addOne :: Integer -> Integer; addOne x = x + 1
+:type addOne
+addOne 5
+let addOne x = x + 1
+:type 10
+"hello"
+:info String
+:info Bool
+10 `div` 5
+div 10 5
+2 ^ 3
+"hello " ++ "mike"
+print "hello " ++ "mike"
+2 + 2
+True == False
+:info Bool
+:type (+)
+:q
+main
