@@ -76,6 +76,7 @@ main = do
                     then yearDiff birthYear futureYear
                     else yearDiff futureYear birthYear
     displayAge maybeAge
+-- where is the applicative? are you supposed to modify here too? i think so.
 
 -- Now try to do it without modifying yearDiff directly, but by using a helper function which is applied to yearDiff.
 
