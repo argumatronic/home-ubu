@@ -17,13 +17,21 @@
 
 ## Applicatives vs Monads  
 - context  
-- composability (applicatives compose; monads need transformers)
+- composability (applicatives compose; monads need transformers)  
 
-## Examples of monadic code and applicative code
+## Examples of monadic code and applicative code  
+- Validation  
+  - gonna need good examples 
+  - it appears you can show how a diff in applicative and monadic uses of it
+<!--   - https://hackage.haskell.org/package/validation
+ -->
 
 ## Parsing
 
-## Monadic parsing
+## Monadic parsing  
+- trifecta or attoparsec?
+
+## Alternative
 
 ## Applicative parsing  
 - usually context free due to the independent outcomes quality
