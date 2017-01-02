@@ -1,3 +1,5 @@
+module Main where
+
 import Options.Applicative as O
 import Data.Semigroup ((<>))
 import Control.Monad (replicateM_)
@@ -35,6 +37,3 @@ main = execParser opts >>= greet
       ( fullDesc
      O.<> progDesc "Print a greeting for TARGET"
      O.<> header "hello - a test for optparse-applicative" )
-
-
- 
