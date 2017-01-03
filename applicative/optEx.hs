@@ -36,5 +36,6 @@ main = execParser opts >>= greet
      O.<> progDesc "Print a greeting for TARGET"
      O.<> header "hello - a test for optparse-applicative" )
 
-
- 
+-- i do not know how to use this one and cannot figure it out
+-- just keep getting errors when i try to call anything 
+-- this is from the library's own docs

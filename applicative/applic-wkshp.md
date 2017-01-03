@@ -35,7 +35,8 @@
 
 ## Applicative parsing  
 - usually context free due to the independent outcomes quality
-- can also be used to parse context-sensitive grammars tho!
+- can also be used to parse context-sensitive grammars tho!  
+- do not address this - reference to Yorgey's post about it
 
 ## Examples of monadic and applicative parsing  
 - context free and context sensitive
