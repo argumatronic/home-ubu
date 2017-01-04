@@ -1,0 +1,9 @@
+# Haskell
+ .cabal-sandbox
+ .stack-work
+
+# Emacs
+ .projectile
+
+# Sublime
+ *.sublime-workspace

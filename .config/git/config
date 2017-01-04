@@ -1,0 +1,5 @@
+[user]
+email = jdog74@gmail.com
+   name = Julie Moronuki
+[core]
+   excludesfile = ~/.config/git/ignore
