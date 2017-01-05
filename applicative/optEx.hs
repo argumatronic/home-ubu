@@ -23,6 +23,8 @@ sample = Sample
         O.<> showDefault
         O.<> value 1
         O.<> metavar "INT" )
+-- rewrite this to use flag/flag' to see wtf is going on there
+-- or one of them -- ocharles one would be ok
 
 greet :: Sample -> IO ()
 greet (Sample h False n) = replicateM_ n $ putStrLn $ "Hello, " ++ h
