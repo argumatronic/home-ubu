@@ -1,6 +1,17 @@
-# hour 2: electric boogaloo
+% optparse-applicative
+% Julie Moronuki
+% LambdaConf Winter Retreat
+% January 10, 2017
 
-# let's look at some of the stuff from optparse-applicative we want to be familiar with
+# Hour 2: Electric Boogaloo
+
+In this hour, we'll be working on a small project with the optparse-applicative library.
+<!-- need to add instructions for Stack
+probably have a small project (simple) initialized so we can load it up with samples
+and also then clone the pprkpr repo, whatever we're going to call that
+consider making rmbrfeed, todolist into a cla as well
+ -->
+# Example
 
 ## Options.Applicative.Builder
 
