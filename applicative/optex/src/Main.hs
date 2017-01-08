@@ -16,6 +16,7 @@ import Data.Char
 
 -- main :: IO ()
 -- main = execParser opts >>= runWithOptions
+-- -- execParser :: ParserInfo a -> IO a
 --   where
 --     parser = MyApp <$> argument str (metavar "NAME")
 --     opts = info parser mempty
