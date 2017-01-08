@@ -58,14 +58,6 @@ argument :: ReadM a -> Mod ArgumentFields a -> Parser a
 Builder for an argument parser.
 
 
-infoOption :: String -> Mod OptionFields (a -> a) -> Parser (a -> a)
-
-An option that always fails and displays a message.
-
-strOption :: Mod OptionFields String -> Parser String
-
-Builder for an option taking a String argument.
-
 
 ## information we can provide about our arguments
 
