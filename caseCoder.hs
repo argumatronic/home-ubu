@@ -12,8 +12,9 @@ employeeRank :: Employee -> Employee -> IO ()
 employeeRank e e' =
     case compare e e' of
         GT -> reportBoss e e'
-        EQ -> putStrLn "Neither employee is the boss"
+        EQ -> putStrLn "Neither employee is the boss."
         LT -> (flip reportBoss) e e'
+      -- flip :: (a -> b -> c) -> b -> a -> c
 
 rankImprovement :: (Employee -> Employee -> Ordering) -> Employee -> Employee -> IO ()
 -- now it accepts a function argument where we had compare before
