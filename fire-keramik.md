@@ -174,3 +174,5 @@ instance Eq Seuss where
          (Seuss color' animal') =
          (color == color') && (animal == animal')
 ```
+
+# Monoid
