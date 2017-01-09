@@ -1,18 +1,17 @@
--- source https://pbrisbin.com/posts/applicative_functors/
-
 data User = User
-    { userFirstName :: Text
-    , userLastName  :: Text
-    , userEmail     :: Text
-    }
+    { userFirstName :: String
+    , userLastName  :: String
+    , userEmail     :: String
+    } 
+    deriving (Show, Eq)
 
-type Profile = [(Text, Text)]
+type Profile = [(String, String)]
 
-    -- Example:
-    -- [ ("first_name", "Pat"            )
-    -- , ("last_name" , "Brisbin"        )
-    -- , ("email"     , "me@pbrisbin.com")
-    -- ]
+-- 
+julie = [("first_name", "Julie"), ("last_name", "Moronuki"), ("email", "srs_haskell_cat@aol.com")]
+user = [("first_name", "Jack"), ("email", "ice.skrig@gmail.com")]
+mydude = [("email", "fire.keramik@hotmail.com")]
+
 
 buildUser :: Profile -> Maybe User
 buildUser p =
@@ -32,17 +31,23 @@ buildUserM p = do
 
     return $ User fn ln e
 
--- f :: a    -> b    -> c    -> d
-User :: Text -> Text -> Text -> User
+-- Using Monad means we have the ability to access the values returned 
+-- by earlier lookup expressions in later ones. 
+-- That ability is often critical, but not always. 
+-- In many cases (like here), we do nothing but pass them all as-is 
+-- to the User constructor “at once” as a last step.
+
+--   f :: a    -> b    -> c    -> d
+-- User :: Text -> Text -> Text -> User
 
 -- x                  :: f     a
-lookup "first_name" p :: Maybe Text
+-- lookup "first_name" p :: Maybe Text
 
--- y                 :: f     b
-lookup "last_name" p :: Maybe Text
+-- -- y                 :: f     b
+-- lookup "last_name" p :: Maybe Text
 
--- z             :: f     c
-lookup "email" p :: Maybe Text
+-- -- z             :: f     c
+-- lookup "email" p :: Maybe Text
 
 -- result :: f d
 -- result = f <$> x <*> y <*> z
@@ -51,3 +56,10 @@ buildUserA p = User
     <$> lookup "first_name" p
     <*> lookup "last_name" p
     <*> lookup "email" p
+
+-- Main> buildUser user
+-- Nothing
+-- Main> buildUserM user
+-- Nothing
+-- Main> buildUserA user
+-- Nothing

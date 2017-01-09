@@ -1,5 +1,13 @@
 # Applicative workshop
 
+-- you're gonna need to start a new project that just has all the sample files in there you want them to be able to run, and also one for the optparse project
+-- sample code:
+-- AccValidation something
+-- do vs ApplicativeDo
+-- 
+-- optparse example
+-- optparse example with flag
+
 ## fmap
 
 ## Monad

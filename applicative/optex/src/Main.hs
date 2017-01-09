@@ -16,6 +16,7 @@ import Data.Char
 
 -- main :: IO ()
 -- main = execParser opts >>= runWithOptions
+-- -- execParser :: ParserInfo a -> IO a
 --   where
 --     parser = MyApp <$> argument str (metavar "NAME")
 --     opts = info parser mempty
@@ -67,27 +68,3 @@ main = execParser opts >>= runWithOptions
 -- env PATH=$(stack path --bin-path) optex Julie -e
 
 
--- what Chris wants to know about is this:
--- yeah
--- subparsers I think
--- well
--- The concrete example I didn't know how to do was
--- Most programs have a --version flag, right
--- yah
--- Chris Martin (ch.martin@gmail.com)
--- So I wanted to be able to take the disjunction of two parsers
--- One for just --version, the other for the whole rest of the args
--- -version isn't an argument, it's a flag
--- the latter, other options should succeed without it
--- ok
--- Chris Martin (ch.martin@gmail.com)
--- actually idk I'm not sure if I understood what you meant by "argument" or not
--- because I'm about to call it an argument:
--- likewise if --version is the only argument, all the other args shouldn't be provided
--- ah you want that kind of disjunction
--- Chris Martin (ch.martin@gmail.com)
--- and if you provide both --version and some other args... idk, it should probably fail to parse
--- exclusive
-
-
--- ok so we should write a program that, given a text file for input, returns a list of the n most-frequently-appearing words
