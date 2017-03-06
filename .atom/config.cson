@@ -1,5 +1,9 @@
 "*":
-  core: {}
+  core:
+    themes: [
+      "one-dark-ui"
+      "warm-night-syntax"
+    ]
   editor:
     fontFamily: "Monoid"
     invisibles: {}
