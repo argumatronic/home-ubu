@@ -41,10 +41,10 @@ import Data.Ratio ((%))
 -}
 
 myModMask            = mod4Mask       -- changes the mod key to "super"
-myFocusedBorderColor = "#ff0000"      -- color of focused border
+myFocusedBorderColor = "#990000"      -- color of focused border
 myNormalBorderColor  = "#cccccc"      -- color of inactive border
-myBorderWidth        = 1              -- width of border around windows
-myTerminal           = "terminator"   -- which terminal software to use
+myBorderWidth        = 3              -- width of border around windows
+myTerminal           = "gnome-terminal"   -- which terminal software to use
 myIMRosterTitle      = "Buddy List"   -- title of roster on IM workspace
                                       -- use "Buddy List" for Pidgin, but
                                       -- "Contact List" for Empathy
@@ -55,9 +55,9 @@ myIMRosterTitle      = "Buddy List"   -- title of roster on IM workspace
   of text which xmonad is sending to xmobar via the DynamicLog hook.
 -}
 
-myTitleColor     = "#eeeeee"  -- color of window title
+myTitleColor     = "#F5B7C6"  -- color of window title
 myTitleLength    = 80         -- truncate window title to this length
-myCurrentWSColor = "#e6744c"  -- color of active workspace
+myCurrentWSColor = "#E64C71"  -- color of active workspace
 myVisibleWSColor = "#c185a7"  -- color of inactive workspace
 myUrgentWSColor  = "#cc0000"  -- color of workspace with 'urgent' window
 myCurrentWSLeft  = "["        -- wrap active workspace with these
