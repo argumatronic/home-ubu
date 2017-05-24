@@ -7,3 +7,12 @@
 
 # Sublime
  *.sublime-workspace
+
+# IntelliJ
+
+*.ipr
+*.swp
+.idea
+*.iml
+ideaHaskellLib
+.ideaHaskellLib

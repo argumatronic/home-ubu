@@ -42,6 +42,11 @@
 !/.ghc/ghci.conf
 !/.gitconfig
 !/.gitignore
+
+!/.idea/
+/.idea/*
+/.ideaHaskellLib
+
 !/.latexmkrc
 !/.local/
 /.local/bin/
