@@ -1,13 +1,18 @@
 "*":
+  autosave:
+    enabled: true
   core:
     themes: [
       "one-dark-ui"
-      "flowerbed-dark-syntax"
+      "fairyfloss"
     ]
   editor:
+    autoIndentOnPaste: false
     fontFamily: "Monoid"
     invisibles: {}
     softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
   "exception-reporting":
     userId: "442e1f62-5ade-c806-af93-da31575ba721"
   welcome:
