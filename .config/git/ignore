@@ -1,12 +1,12 @@
 # Haskell
- .cabal-sandbox
- .stack-work
+.cabal-sandbox
+.stack-work
 
 # Emacs
- .projectile
+.projectile
 
 # Sublime
- *.sublime-workspace
+*.sublime-workspace
 
 # IntelliJ
 
