@@ -117,11 +117,6 @@ if ! shopt -oq posix; then
 fi
 source $HOME/.nix-profile/etc/profile.d/nix.sh
 
-export PATH=~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/jmo/.local/bin:$HOME/.cabal/bin$PATH
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="$HOME/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.10.3/bin:$PATH"
-export PATH="$HOME/.local/bin":$PATH

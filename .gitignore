@@ -61,8 +61,8 @@
 !/nix/
 !/oseary
 !/.sbt/
-!/.stack/.gitignore
-!/.stack/config.yaml
+/.stack/.gitignore
+/.stack/config.yaml
 !/.stack/shell.nix
 !/.tmux.conf
 !/.vimrc

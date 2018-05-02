@@ -2,13 +2,15 @@
   autosave:
     enabled: true
   core:
+    telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "fairyfloss"
+      "one-light-ui"
+      "ficus-syntax"
     ]
   editor:
     autoIndentOnPaste: false
-    fontFamily: "Monoid"
+    fontFamily: "Ubuntu Mono"
+    fontSize: 24
     invisibles: {}
     softWrap: true
     softWrapAtPreferredLineLength: true
