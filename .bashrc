@@ -117,6 +117,6 @@ if ! shopt -oq posix; then
 fi
 source $HOME/.nix-profile/etc/profile.d/nix.sh
 
-export PATH=$HOME/.local/bin:$HOME/jmo/.local/bin:$HOME/.cabal/bin$PATH
+export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$HOME/live-ghci/bin:$PATH
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

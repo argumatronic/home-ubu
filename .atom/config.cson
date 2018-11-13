@@ -1,7 +1,10 @@
 "*":
+  "autocomplete-plus":
+    enableAutoActivation: false
   autosave:
     enabled: true
   core:
+    closeDeletedFileTabs: true
     telemetryConsent: "no"
     themes: [
       "one-light-ui"
