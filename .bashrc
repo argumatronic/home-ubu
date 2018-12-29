@@ -117,6 +117,8 @@ if ! shopt -oq posix; then
 fi
 source $HOME/.nix-profile/etc/profile.d/nix.sh
 
+export NIX_PATH="$NIX_PATH:unstable=$HOME/.nix-defexpr/channels/unstable"
+
 export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$HOME/live-ghci/bin:$PATH
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
